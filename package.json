@@ -5,12 +5,13 @@
   "main": "main.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Ahmedsherif0023/focusflow"
+    "url": "git+https://github.com/Ahmedsherif0023/focusflow.git"
   },
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
+      "dev": "concurrently \"npm run dev --prefix frontend\" \"wait-on http://localhost:5173 && electron .\"",
     "publish": "electron-forge publish"
   },
   "author": "shefo",
@@ -30,5 +31,10 @@
   "dependencies": {
     "electron-squirrel-startup": "^1.0.1",
     "update-electron-app": "^3.1.1"
-  }
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Ahmedsherif0023/focusflow/issues"
+  },
+  "homepage": "https://github.com/Ahmedsherif0023/focusflow#readme"
 }
